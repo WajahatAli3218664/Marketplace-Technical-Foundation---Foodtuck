@@ -1,77 +1,68 @@
-# **FOODTUCK ONLINE FOOD ORDERING PLATFORM**
+# **FoodTuck Online Food Ordering Platform**
 
-**Author:** Wajahat Ali\
-**Role:** Lead Developer\
+**Author:** Wajahat Ali  
+**Role:** Lead Developer  
 **Roll Number:** 00103369
 
 ---
 
-## Overview
+## **Overview**
 
 The **FoodTuck Online Shopping Platform** is an innovative marketplace that allows users to browse, order, and track food items seamlessly. This document details the platform's system architecture, technical workflows, schema design, and key functionalities.
 
 ---
 
-## System Architecture
+## **System Architecture**
 
-### High-Level Overview
+### **High-Level Overview**
 
+![System Architecture Overview](System%20architecture.png)
 
-
-### Components:
+### **Components:**
 
 1. **Frontend (Next.js):**
-
    - Interactive and responsive UI for users to browse products, manage carts, and check out.
    - Real-time API integrations to fetch and display dynamic product and order data.
 
 2. **Sanity CMS:**
-
    - Backend system for managing product details, categories, user data, and order records.
    - Exposes APIs for smooth data synchronization between frontend and backend.
 
 3. **Third-Party APIs:**
-
    - **Shipment Tracking API (ShipEngine):** Real-time tracking for shipped orders.
    - **Payment Gateway (Stripe):** Secure payment processing.
 
 4. **Product Data API:**
-
    - Dynamic product catalog management with stock and price updates.
 
 ---
 
-## Key Workflows
+## **Key Workflows**
 
-### 1. **User Registration:**
-
+### **1. User Registration:**
 - **Process:**
   - Users sign up via the frontend.
   - Data is securely stored in Sanity CMS.
 - **Outcome:** Account creation and seamless login.
 
-### 2. **Product Browsing:**
-
+### **2. Product Browsing:**
 - **Process:**
   - Users browse products via dynamic frontend pages.
   - Product data (name, price, stock, description) is fetched from Sanity CMS.
 - **Outcome:** Users view detailed product listings.
 
-### 3. **Order Placement:**
-
+### **3. Order Placement:**
 - **Process:**
   - Users add items to their cart and proceed to checkout.
   - Payment is processed via Stripe, and order details are saved in Sanity CMS.
 - **Outcome:** Order confirmation and receipt sent to the user.
 
-### 4. **Shipment Tracking:**
-
+### **4. Shipment Tracking:**
 - **Process:**
   - Users track their orders using ShipEngine.
 - **Outcome:** Real-time tracking updates displayed on the user dashboard.
 
-### 5. **Inventory Management:**
-
+### **5. Inventory Management:**
 - **Process:**
   - Sanity CMS updates product stock levels automatically after orders.
   - Out-of-stock products are displayed with a wishlist option.
@@ -79,20 +70,13 @@ The **FoodTuck Online Shopping Platform** is an innovative marketplace that allo
 
 ---
 
-## API Endpoints
+## **API Endpoints**
 
-| Endpoint             | Method | Purpose                         | Response Example                                          |
-| -------------------- | ------ | ------------------------------- | --------------------------------------------------------- |
-| `/products`          | GET    | Fetch all product details       | `[ { "name": "Burger", "price": 8.00, "stock": 100 } ]`   |
-| `/order`             | POST   | Submit a new order              | `{ "orderId": 123, "status": "success" }`                 |
-| `/shipment-tracking` | GET    | Fetch shipment tracking details | `{ "trackingId": "SHIP123", "status": "In Transit" }`     |
-| `/inventory`         | GET    | Fetch current stock levels      | `{ "productId": 456, "stock": 50 }`                       |
-| `/cart`              | POST   | Add products to cart            | `{ "cartId": 789, "items": [ { "name": "Burger" } ] }`    |
-| `/wishlist`          | POST   | Add products to wishlist        | `{ "wishlistId": 567, "items": [ { "name": "Pizza" } ] }` |
+![API Endpoints](ApiEndpoints.png)
 
 ---
 
-## Sanity CMS Schema
+## **Sanity CMS Schema**
 
 ```javascript
 export default {
@@ -158,29 +142,26 @@ export default {
 
 ---
 
-## Technical Roadmap
+## **Technical Roadmap**
 
 1. **Week 1:**
-
    - Set up Next.js frontend.
    - Configure Sanity CMS.
 
 2. **Week 2:**
-
    - Integrate Sanity CMS APIs with the frontend for product and order data.
    - Implement user registration and login workflows.
 
 3. **Week 3:**
-
    - Add payment gateway (Stripe).
    - Integrate shipment tracking using ShipEngine.
 
 4. **Week 4:**
-
    - Finalize workflows, optimize frontend, and test the system end-to-end.
 
 ---
 
-## Conclusion
+## **Conclusion**
+
 The FoodTuck platform is designed to revolutionize online food shopping with a user-friendly interface, efficient backend integrations, and secure transactions. This comprehensive document ensures a robust development and deployment process, enabling FoodTuck to provide an exceptional user experience.
 
