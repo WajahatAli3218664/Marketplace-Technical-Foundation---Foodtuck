@@ -1,4 +1,4 @@
-#FoodTuck Online Food Ordering Platform
+# **FOODTUCK ONLINE FOOD ORDERING PLATFORM**
 
 **Author:** Wajahat Ali\
 **Role:** Lead Developer\
@@ -182,6 +182,5 @@ export default {
 ---
 
 ## Conclusion
-
 The FoodTuck platform is designed to revolutionize online food shopping with a user-friendly interface, efficient backend integrations, and secure transactions. This comprehensive document ensures a robust development and deployment process, enabling FoodTuck to provide an exceptional user experience.
 
