@@ -16,8 +16,6 @@ The **FoodTuck Online Shopping Platform** is an innovative marketplace that allo
 
 ### High-Level Overview
 
-![System Architecture Overview](System%20architecture.png)
-
 ### Components:
 
 1. **Frontend (Next.js):**
